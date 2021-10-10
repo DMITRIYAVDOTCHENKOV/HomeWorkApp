@@ -13,6 +13,27 @@ public class lesson3 {
         System.out.println(Arrays.toString(customArray(4, 44)));
         System.out.println("--------");
         minAndMax();
+        System.out.println("--------");
+        comparingValuesInAnArray();
+
+    }
+
+    private static void comparingValuesInAnArray() {
+        int[] myArray = {5, 5, 5, 5, 5, 15, 1};
+        int sum = 0;
+        int sum1 = 0;
+        int a = myArray.length - 1;
+        int b = myArray.length - 2;
+        for (int i = 0; i < myArray.length - 2; i++) {
+            sum += myArray[i];
+            sum1 = myArray[a] + myArray[b];
+        }
+        if (sum == sum1) {
+            System.out.println(true);
+        } else {
+            System.out.println(false);
+
+        }
     }
 
     private static void minAndMax() {
