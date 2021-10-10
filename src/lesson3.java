@@ -14,12 +14,12 @@ public class lesson3 {
         System.out.println("--------");
         minAndMax();
         System.out.println("--------");
-        comparingValuesInAnArray();
+        System.out.println(comparingValuesInAnArray());
 
     }
 
-    private static void comparingValuesInAnArray() {
-        int[] myArray = {5, 5, 5, 5, 5, 15, 1};
+    private static boolean comparingValuesInAnArray() {
+        int[] myArray = {4, 5, 5, 5, 5, 15, 10};
         int sum = 0;
         int sum1 = 0;
         int a = myArray.length - 1;
@@ -28,13 +28,9 @@ public class lesson3 {
             sum += myArray[i];
             sum1 = myArray[a] + myArray[b];
         }
-        if (sum == sum1) {
-            System.out.println(true);
-        } else {
-            System.out.println(false);
-
-        }
+        return sum == sum1;
     }
+
 
     private static void minAndMax() {
         int[] minAndMax = new int[]{6, 5, 60, 40, 88, 10, 98, 154};
